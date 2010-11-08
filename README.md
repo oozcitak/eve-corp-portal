@@ -34,6 +34,23 @@ The database dump of EVE Online is not included. The [official database](http://
 
 Next, you need to configure PHP with the database settings. Open `core.class.php` in the `core` directory and change the database settings between lines 62-78.
 
+We now need to setup cron jobs for the portal. Those jobs are used to periodiacally fetch information from EVE Online API. Edit your cron jabs with:
+
+    crontab -e
+
+Add the following lines. Remember to change the paths.
+
+    01 *  *   *   *     php /path/to/eve-portal/core/cron/H00.cron.php > /dev/null 2>&1
+    31 *  *   *   *     php /path/to/eve-portal/core/cron/H30.cron.php > /dev/null 2>&1
+    01 00 *   *   *     php /path/to/eve-portal/core/cron/D00.cron.php > /dev/null 2>&1
+    01 11 *   *   *     php /path/to/eve-portal/core/cron/D11.cron.php > /dev/null 2>&1
+    01 12 *   *   *     php /path/to/eve-portal/core/cron/D12.cron.php > /dev/null 2>&1
+    01 03 *   *   1     php /path/to/eve-portal/core/cron/W1.cron.php > /dev/null 2>&1
+    01 03 *   *   3     php /path/to/eve-portal/core/cron/W2.cron.php > /dev/null 2>&1
+    01 03 *   *   5     php /path/to/eve-portal/core/cron/W3.cron.php > /dev/null 2>&1
+    01 03 *   *   6     php /path/to/eve-portal/core/cron/W4.cron.php > /dev/null 2>&1
+    01 03 *   *   7     php /path/to/eve-portal/core/cron/W5.cron.php > /dev/null 2>&1
+
 Now set up your http server. For Apache your configuration will look like this. (Obviously, you need to replace server name and root path to your settings.)
 
     <VirtualHost *:80>
@@ -49,8 +66,16 @@ Now set up your http server. For Apache your configuration will look like this. 
       </Directory>
     </VirtualHost>
 
-You can now restart your http server and if all goes well, you can log in to the portal. For your first login use the username `admin` and `password `admin`. Once you log in, go to your profile page and change your password.
+You can now restart your http server and if all goes well, you can log in to the portal. For your first login enter username `admin` and `password `admin`. Once you log in, go to your profile page and change your password.
+
+You now need to configure the director API key. First create a character in game and give it director right. Now go to the [EVE Online API page](http://www.eveonline.com/api/default.asp) and copy the API key for this character. Go to the admin page, select the portal admin option and paste your API key here. Your corporation and member information will be fetched using this API key. It may take up to 24 hours for the changes to take effect.
 	
+You can now announce your brand new corp portal to your members. Once they login with their API keys, they will have access to the portal with their in-game roles, character names and portraits fetched from the API.
+
 # Disclaimer
 
+I am not affiliated with [EVE Online](http://www.eveonline.com/)e or [CCP Games](http://www.ccpgames.com/). Also, I no longer maintain this project and will not provide support for it. If you are stuck, you are on your own.
+
 # License
+
+This CMS is licensed under the [MIT license](http://www.opensource.org/licenses/mit-license.php). Some text and images used in the project are properties of [CCP Games](http://www.ccpgames.com/). Please read and abide by the EVE Online [terms of service](http://www.eveonline.com/pnp/terms.asp), [EULA](http://www.eveonline.com/pnp/eula.asp) and [website terms of use](http://www.eveonline.com/pnp/termsofuse.asp).
