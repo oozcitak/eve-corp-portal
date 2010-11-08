@@ -34,7 +34,7 @@ The database dump of EVE Online is not included. The [official database](http://
 
 Next, you need to configure PHP with the database settings. Open `core.class.php` in the `core` directory and change the database settings between lines 62-78.
 
-We now need to setup cron jobs for the portal. Those jobs are used to periodiacally fetch information from EVE Online API. Edit your cron jobs with:
+We now need to setup cron jobs for the portal. Those jobs are used to periodically fetch information from EVE Online API. Edit your cron jobs with:
 
     crontab -e
 
@@ -76,7 +76,7 @@ You can now announce your brand new corp portal to your members. Once they login
 
 # Disclaimer
 
-I am not affiliated with [EVE Online](http://www.eveonline.com/)e or [CCP Games](http://www.ccpgames.com/). Also, I no longer maintain this project and will not provide support for it. If you are stuck, you are on your own.
+I am not affiliated with [EVE Online](http://www.eveonline.com/) or [CCP Games](http://www.ccpgames.com/). Also, I no longer maintain this project and will not provide support for it. If you are stuck, you are on your own.
 
 # License
 
