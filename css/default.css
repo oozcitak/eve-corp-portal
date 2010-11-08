@@ -1,0 +1,768 @@
+body
+{
+  min-width: 1160px;
+  background-color: #222;
+  color: #ccc;
+  font-family: calibri, tahoma, verdana, arial, sans-serif;
+  font-size: 10pt;
+  padding-top: 1em;
+}
+/* Common tags */
+td, th
+{
+  vertical-align: top;
+}
+p, td, th, center
+{
+  color: #ccc;
+  font-family: calibri, tahoma, verdana, arial, sans-serif;
+  font-size: 10pt;
+}
+pre
+{
+  overflow: auto;
+  background-color: #fff;
+  color: #000;
+  border: double 3px #000;
+  padding: 0.5em;
+}
+th
+{
+  text-align: left;
+  vertical-align: top;
+}
+td
+{
+  vertical-align: top;
+}
+td.center
+{
+  text-align: center; 
+  vertical-align: middle;
+}
+.data th
+{
+  text-transform: uppercase;
+  border-top: solid 4px #333;
+  border-bottom: solid 4px #333;
+  border-left: solid 1px #333;
+  border-right: solid 1px #333;
+  text-align: center; 
+  padding: 0.2em;
+  background-color: #444;
+  vertical-align: middle;
+}
+.data td
+{
+  border: solid 1px #444;
+  padding: 0.2em;
+}
+a
+{
+  color: #66B5FF;
+  text-decoration: none;
+  font-family: calibri, tahoma, verdana, arial, sans-serif;
+}
+a:hover
+{
+  color: #fff;
+  text-decoration: underline;
+}
+input, textarea, select
+{
+  font-family: calibri, tahoma, verdana, arial, sans-serif;
+  font-size: 10pt;
+  background-color: #111;
+  color: #ddd;
+  border: solid 1px #444;
+}
+input[type=button], input[type=submit]
+{
+  background: #000 url("form_bg.png") 0px 0px repeat-x scroll;
+  border-left: solid 1px #666;
+  border-top: solid 1px #666;
+  text-align: center;
+}
+img
+{
+  border: none;
+}
+table
+{
+  margin: 12px 0px;
+  border-collapse: collapse
+}
+/* Headers */
+h2
+{
+  margin: 0px;
+  font-size: 13pt;
+  padding-top: 6px;
+  color: #66B5FF;
+}
+h3
+{
+  font-size: 12pt;
+  padding-top: 4px;
+  color: #fff;
+}
+hr
+{
+  border-top: solid 1px #777;
+}
+
+/* Layout */
+div.page
+{
+  margin: 0px 120px;
+}
+
+div.welcome
+{
+  width: 100%;
+  border: solid 1px #303030;
+  padding: 0px;
+}
+div.welcome h2
+{
+  background-color: #303030;
+  color: #888;
+  margin: 0px;
+  padding: 0.2em;
+  font-size: 13pt;
+  text-transform: uppercase;
+  text-align: center;
+}
+div.welcome p
+{
+  font-size: 10pt;
+  margin: 0.5em;
+}
+
+div.news, div.recentnews
+{
+  width: 100%;
+  border: solid 1px #303030;
+  padding: 0px;
+}
+div.recentnews
+{
+  background-color: #282828;
+}
+div.news h2, div.recentnews h2
+{
+  background-color: #303030;
+  border: solid 1px #303030;
+  margin: 0px;
+  font-size: 10pt;
+  color: #888;
+  text-transform: uppercase;
+  padding: 4px;
+  padding-bottom: 0px;
+}
+div.recentnews h2
+{
+  color: #fff;
+}
+div.news h3, div.recentnews h3
+{
+  background-color: #303030;
+  border: solid 1px #303030;
+  margin: 0px;
+  font-size: 8pt;
+  color: #888;
+  padding: 4px;
+  padding-top: 0px;
+}
+div.recentnews h3
+{
+  color: #ccc;
+}
+div.news p, div.recentnews p
+{
+  font-size: 10pt;
+  margin: 0.5em;
+}
+
+div.evenews
+{
+  width: 100%;
+  background-color: #303030;
+  border: solid 1px #444;
+  padding: 0px;
+}
+div.evenews h2
+{
+  background-color: #444;
+  border: solid 1px #444;
+  margin: 0px;
+  padding: 4px;
+  font-size: 10pt;
+  color: white;
+  text-transform: uppercase;
+}
+div.evenews p
+{
+  font-size: 8pt;
+  margin: 4px;
+}
+
+div.error
+{
+  margin: 10px 0px;
+  padding: 10px;
+  background-color: #7a0000;
+  border: solid 2px #1e0000;
+  color: #fff;
+}
+div.info
+{
+  margin: 10px 0px;
+  padding: 10px;
+  background-color: #00007a;
+  border: solid 2px #00001e;
+  color: #fff;
+}
+div.error p, div.info p
+{
+  color: #fff;
+}
+div.error a, div.info a
+{
+  color: #fff;
+  text-decoration: underline;
+}
+div.error h1, div.info h1
+{
+  font-weight: bold;
+  font-size: 14pt;
+}
+div.header
+{
+  clear: both;
+  margin: 6px 0px;
+}
+a.header, a.adminheader, a.subheader
+{
+  padding: 1px 8px;
+  margin: 4px 1px;
+  text-decoration: none;
+  color: #ddd;
+  background: #000 url("form_bg.png") 0px 0px repeat-x scroll;
+  border: solid 1px #444;
+  border-left: solid 1px #666;
+  border-top: solid 1px #666;
+  text-align: center;
+}
+a.adminheader
+{
+  background: #000 url("form_bg_red.png") 0px 0px repeat-x scroll;
+  border: solid 1px #422;
+  border-left: solid 1px #644;
+  border-top: solid 1px #644;
+}
+a.subheader
+{
+  background: #000 url("form_bg_blue.png") 0px 0px repeat-x scroll;
+  border: solid 1px #444;
+  border-left: solid 1px #666;
+  border-top: solid 1px #666;
+}
+a.header:hover, a.adminheader:hover, a.subheader:hover
+{
+  color: #fff;
+  text-decoration: none;
+}
+a.permalink  
+{ 
+  padding: 0px 8px;
+  margin: 0px;
+  background: transparent url("icon_link.png") no-repeat scroll 50% 50%; 
+  text-decoration: none;
+}
+
+/* Headers and footers */
+div.logo
+{
+  text-align: center;
+  margin: 0px 120px;
+  background-color: #000;
+}
+div.logo img
+{
+  border: none;
+}
+div.userbar
+{
+  height: 32px;
+  padding: 2px 0px;
+  margin: 0px 120px;
+  background: transparent url("bg_userbar.png") 0px 0px repeat-x scroll;
+  color: #fff;
+}
+div.userbar ul.primary
+{
+  height: 28px;
+  display: block;
+  float: left;
+  list-style-type: none;
+  list-style-image: none;
+  list-style-position: outside;
+  margin: 0px;
+  margin-top: -3px;
+  margin-left: -5px;
+  padding: 0px;
+  padding-top: 6px;
+  padding-left: 6px;
+  background: transparent url("bg_userbar_left.png") 0px 1px no-repeat scroll;
+}
+div.userbar ul.primary li
+{
+  float: left;
+  display: block;
+  margin-top: 2px;
+  margin-right: 2px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding: 0px;
+}
+div.userbar ul.primary li a
+{
+  text-decoration: none;
+}
+div.userbar ul.primary li a span
+{
+  display: none;
+}
+div.userbar ul.primary li a:hover
+{
+  text-decoration: none;
+}
+div.userbar ul.secondary
+{
+  height: 28px;
+  float: right;
+  display: block;
+  list-style-type: none;
+  list-style-image: none;
+  list-style-position: outside;
+  margin: 0px;
+  margin-top: -1px;
+  padding: 0px;
+  padding-top: 6px;
+  padding-left: 50px;
+  font-size: 8pt;
+  background: #222 url("bg_userbar_right.png") 0px -1px no-repeat scroll;
+}
+div.userbar ul.secondary li
+{
+  float: left;
+  display: block;
+  margin-top: 0px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+div.userbar ul.secondary li span
+{
+  color: #999;
+  padding-right: 5px;
+}
+div.userbar ul.secondary input
+{
+  background: #111;
+  color: #ddd;
+  border: solid 1px #444;
+  font-size: 8pt;
+}
+div.userbar ul.secondary input[type=submit]
+{
+  background: #000 url("form_bg.png") 0px 0px repeat-x scroll;
+  border-left: solid 1px #666;
+  border-top: solid 1px #666;
+}
+div.userbar ul.secondary input[type=submit]:hover
+{
+  color: #fff;
+}
+div.userbar ul.secondary li a
+{
+  color: #ddd;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+div.userbar ul.secondary li a:hover
+{
+  color: #fff;
+  text-decoration: underline;
+}
+div.navbar
+{
+  font-size: 12pt;
+  border: solid 1px #000;
+}
+div.navbar a
+{
+  display: block;
+  margin: 0px;
+  padding: 2px 10px;
+  background: transparent url("bg_leftbar.png") 0px 0px repeat scroll;
+}
+div.navbar a:hover
+{
+  color: #000;
+  outline: solid 1px #000;
+  text-decoration: none;
+  background: transparent url("bg_leftbar_hover.png") 0px 0px repeat scroll;
+}
+div.rightbar p
+{
+  font-size: 8pt;
+  margin-top: 6px;
+  margin-bottom: 0px;
+}
+div.rbcontent
+{
+  font-size: 10pt;
+  border: solid 1px #303030;
+  border-top: none;
+  padding: 4px;
+}
+div.rbcontentheader
+{
+  color: #888;
+  background-color: #303030;
+  margin: -4px;
+  padding: 4px;
+  text-transform: uppercase;
+}
+div.rbcontent input
+{
+  background: #111;
+  color: #ddd;
+  font-size: 8pt;
+  border: solid 1px #444;
+  width: 160px;
+  margin-right: 4px;
+}
+div.rbcontent input[type=submit]
+{
+  background: #000 url("form_bg.png") 0px 0px repeat-x scroll;
+  border-left: solid 1px #666;
+  border-top: solid 1px #666;
+  width: 40px;
+}
+div.content
+{
+  text-align: left;
+  font-size: 10pt;
+}
+div.footer
+{
+  margin: 0px 120px;
+  text-align: center;
+  font-size: 8pt;
+  color: #777;
+}
+span.info
+{
+  font-size: 8pt;
+  color: #888;
+  vertical-align: bottom;
+}
+a.info
+{
+  font-size: 8pt;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+div.clear
+{
+  clear: both;
+}
+img.portrait
+{
+  border: solid 1px #000; 
+  margin: 6px;
+}
+
+/* Userbar buttons */
+#home             { padding: 6px 32px; background: transparent url("btn_userbar.png") no-repeat scroll 12px -1px; }
+#policies      { padding: 6px 31px; background: transparent url("btn_userbar.png") no-repeat scroll -52px -1px; }
+#forums         { padding: 6px 30px; background: transparent url("btn_userbar.png") no-repeat scroll -114px -1px; }
+#news             { padding: 6px 25px; background: transparent url("btn_userbar.png") no-repeat scroll -174px -1px; }
+#calendar     { padding: 6px 36px; background: transparent url("btn_userbar.png") no-repeat scroll -224px -1px; }
+#quickinfo   { padding: 6px 40px; background: transparent url("btn_userbar.png") no-repeat scroll -296px -1px; }
+#alliance     { padding: 6px 32px; background: transparent url("btn_userbar.png") no-repeat scroll -376px -1px; }
+#killboard    { padding: 6px 35px; background: transparent url("btn_userbar.png") no-repeat scroll -442px -1px; }
+/* Userbar buttons - Hover state */
+#home:hover             { padding: 6px 32px; background: transparent url("btn_userbar_hover.png") no-repeat scroll 12px -1px; }
+#policies:hover     { padding: 6px 31px; background: transparent url("btn_userbar_hover.png") no-repeat scroll -52px -1px; }
+#forums:hover         { padding: 6px 30px; background: transparent url("btn_userbar_hover.png") no-repeat scroll -114px -1px; }
+#news:hover             { padding: 6px 25px; background: transparent url("btn_userbar_hover.png") no-repeat scroll -174px -1px; }
+#calendar:hover     { padding: 6px 36px; background: transparent url("btn_userbar_hover.png") no-repeat scroll -224px -1px; }
+#quickinfo:hover   { padding: 6px 40px; background: transparent url("btn_userbar_hover.png") no-repeat scroll -296px -1px; }
+#alliance:hover     { padding: 6px 32px; background: transparent url("btn_userbar_hover.png") no-repeat scroll -376px -1px; }
+#killboard:hover    { padding: 6px 35px; background: transparent url("btn_userbar_hover.png") no-repeat scroll -442px -1px; }
+
+/* FORUMS */
+h1.forumsection
+{
+  font-size: 12pt;
+  padding: 2px 4px;
+  color: #888;
+  background-color: #303030;
+  border-top: solid 1px #888;
+  border-bottom: solid 1px #888;
+}
+h1.forumsection a
+{
+  color: #888;
+  text-decoration: none;
+}
+h1.forumsection a:hover
+{
+  text-decoration: none;
+}
+div.forumrow
+{
+  width: 100%;
+  margin: 12px 0px;
+}
+div.forumrowheader
+{
+}
+span.foruminfo
+{
+  color: #ccc;
+}
+a.forumtopic
+{
+  font-size: 12pt;
+}
+span.forumtopic
+{
+  font-size: 12pt;
+}
+div.forumauthor
+{
+  float: left;
+}
+img.forumportrait
+{
+  border: solid 1px #000; 
+  margin: 6px 0px;
+  margin-right: 6px;
+}
+td.replyheader
+{
+  background-color: #111;
+  color: #ccc;
+  border: none;
+  border-top: solid 1px #888;
+  border-bottom: solid 1px #888;
+  padding: 2px;
+}
+td.replybody
+{
+  border: none;
+}
+div.replybody
+{
+  padding: 6px 2px;
+}
+div.hottopics
+{
+  width: 100%;
+  background-color: #303030;
+  border: solid 1px #444;
+  padding: 0px;
+}
+div.hottopics h1
+{
+  background-color: #444;
+  border: solid 1px #444;
+  margin: 0px;
+  padding: 4px;
+  font-size: 12pt;
+  color: #fff;
+  text-transform: uppercase;
+}
+div.hottopics p
+{
+  margin: 4px;
+}
+div.pages
+{
+  width: 100%;
+}
+div.pages a
+{
+  background-color: #303030;
+  border: solid 1px #444;
+  margin: 2px;
+  padding: 4px;
+  font-size: 12pt;
+  color: #888;
+  text-decoration: none;
+}
+div.pages a:hover
+{
+  color: #fff;
+  text-decoration: none;
+}
+div.pages span
+{
+  margin: 2px;
+  padding: 4px;
+  font-size: 12pt;
+  color: #888;
+  border: solid 1px #303030;
+}
+a.replybutton, a.adminreplybutton
+{
+  padding: 1px 8px;
+  margin: 1px;
+  text-decoration: none;
+  color: #ddd;
+  border: solid 1px #444;
+  background: #000 url("form_bg.png") 0px 0px repeat-x scroll;
+  border-left: solid 1px #666;
+  border-top: solid 1px #666;
+  text-align: center;
+}
+a.adminreplybutton
+{
+  background: #000 url("form_bg_red.png") 0px 0px repeat-x scroll;
+  border: solid 1px #422;
+  border-left: solid 1px #644;
+  border-top: solid 1px #644;
+}
+a.replybutton:hover, a.adminreplybutton:hover
+{
+  color: #fff;
+  text-decoration: none;
+}
+div.quote
+{
+  width: 95%;
+  border: dashed 1px #ccc;
+  background-color: #303030;
+  margin: 10px auto;
+  padding: 4px;
+}
+span.highlight
+{
+  background-color: #622828;
+  font-weight: bold;
+}
+span.tooltip
+{
+  border-bottom: dashed 1px #444;
+  cursor: help;
+}
+tr.altrow2
+{
+  background-color: #303030;
+}
+tr.altrow1:hover, tr.altrow2:hover
+{
+  background-color: #622828;
+}
+tr.altrow1:hover span.highlight, tr.altrow2:hover span.highlight
+{
+  background-color: #b22828;
+}
+/* User icons */
+.guest        { padding: 0px; padding-left: 18px; background: transparent url("icon_user_green.png") no-repeat scroll 0px 50%; }
+.member      { padding: 0px; padding-left: 18px; background: transparent url("icon_user_orange.png") no-repeat scroll 0px 50%; }
+.manager    { padding: 0px; padding-left: 18px; background: transparent url("icon_user_red.png") no-repeat scroll 0px 50%; }
+.director  { padding: 0px; padding-left: 18px; background: transparent url("icon_user_suit.png") no-repeat scroll 0px 50%; }
+.ceo            { padding: 0px; padding-left: 18px; background: transparent url("icon_user_gray.png") no-repeat scroll 0px 50%; }
+#adminbutton    { padding: 0px 8px; background: transparent url("icon_arrow_down.png") no-repeat scroll 50% 50%; }
+#adminbutton2   { padding: 0px 8px; background: transparent url("icon_arrow_up.png") no-repeat scroll 50% 50%; }
+#adminlinks   
+{ 
+  background-color: #111;
+  padding: 2px 4px; 
+  position: absolute;
+  display: none;
+  width: 100px;
+  z-index: 100;
+  border: solid 1px #444;
+  border-left: solid 1px #666;
+  border-top: solid 1px #666;
+}
+#adminlinks a
+{
+  display: block;
+}
+
+/* Layout tables */
+#leftcell, #rightcell, #centercell, #forumcell
+{
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+#leftcell
+{
+  width: 200px;
+  min-width: 200px;
+}
+#rightcell
+{
+  width: 220px;
+}
+
+/* Mail */
+.maillist
+{
+  color: #ccc;
+  text-decoration: none;
+}
+.maillist:hover
+{
+  color: #ccc;
+  text-decoration: none;
+}
+.maillisttitle
+{
+  font-size: 120%;
+  color: #fff;
+}
+.maillistinfo
+{
+  color: #888;
+}
+.mailheader
+{
+  padding: 0.5em;
+  background-color: #333;
+  color: #ccc;
+  border: solid 1px #444;
+}
+/* OverLib */
+#overDiv
+{ 
+  background-color: #444;
+  font-family: calibri, tahoma, verdana, arial, sans-serif;
+  font-size: 8pt;  
+  padding: 2px 4px; 
+  border: solid 1px #444;
+  border-left: solid 1px #666;
+  border-top: solid 1px #666;
+  position:absolute; 
+  visibility:hidden; 
+  z-index:1000;
+}
+/* AJAX Indicator */
+.throbber
+{
+  text-align: center; 
+  vertical-align: middle;
+  background: transparent url("throbber.gif") 50% 50% no-repeat scroll;
+  min-height: 32px;
+  margin: 6px 0px;
+  font-size: 32px;
+}

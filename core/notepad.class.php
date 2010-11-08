@@ -1,0 +1,1 @@
+<?phpclass Notepad{  public $ID;  public $Author;  public $Title;  public $Text;    function __construct()   {  }}?>

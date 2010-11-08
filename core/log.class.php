@@ -1,0 +1,1 @@
+<?phpclass Log{  public $ID;  public $UserID;  public $UserName;  public $Date;  public $Text;    function __construct()   {  }  }?>

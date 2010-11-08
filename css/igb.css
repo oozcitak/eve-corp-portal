@@ -1,0 +1,144 @@
+/* Common tags */
+body 
+{
+  font-size: 10pt;
+}
+a
+{
+  color: #fc0;
+}
+td, th
+{
+  vertical-align: top;
+}
+p, td, th
+{
+  color: #fff;
+  font-size: 10pt;
+}
+th
+{
+  text-align: left;
+  vertical-align: top;
+}
+td
+{
+  vertical-align: top;
+}
+td.center
+{
+  text-align: center; 
+  vertical-align: middle;
+}
+.data th
+{
+  text-transform: uppercase;
+  border-top: solid 4px #333;
+  border-bottom: solid 4px #333;
+  border-left: solid 1px #333;
+  border-right: solid 1px #333;
+  text-align: center; 
+  padding: 0.2em;
+  vertical-align: middle;
+}
+.data td
+{
+  border: solid 1px #444;
+  padding: 0.2em;
+}
+/* Headers and Footer */
+.logo
+{
+  margin: 0px;
+  padding: 0px;
+  padding-top: 6pt;
+  font-size: 32pt;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+h2
+{
+  margin: 6pt 0px;
+  font-size: 13pt;
+  color: #66B5FF;
+}
+h3
+{
+  margin: 6pt 0px;
+  font-size: 12pt;
+  color: #fff;
+}
+hr
+{
+  border-top: solid 1px #fff;
+}
+.footer
+{
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 6pt;
+  font-size: 8pt;
+  color: #888;
+  text-align: center;
+}
+
+/* LAYOUT */
+.page
+{
+  width: 80%;
+  margin: auto;
+}
+
+/* CALENDAR AND NEWS ON  HOME PAGE */
+.newsheader
+{
+  background-color: #111;
+  color: #fff;
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px 4pt;
+  padding-top: 6pt;
+  text-transform: uppercase;
+}
+span.subtitle
+{
+  color: #ccc;
+  font-size: 10pt;
+  margin: 0px;
+  padding: 0px 4pt;
+  padding-bottom: 6pt;
+}
+.newsbody
+{
+  padding: 4pt;
+  color: #fff;
+  font-size: 10pt;  
+}
+
+/* LARGE BUTTON LINKS */
+.homelinks
+{
+  color: #666;
+  font-size: 12pt;
+  font-weight: bold;
+  padding: 2pt;
+}
+.corelink
+{
+  color: #fc0;
+}
+.pluginlink
+{
+  color: #6c3;
+}
+/* ERROR/INFO */
+div.error
+{
+  background-color: #300;
+}
+div.info
+{
+  background-color: #003;
+}
