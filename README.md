@@ -1,6 +1,6 @@
 # eve-corp-portal
 
-This is a CMS for the MMORPG [EVE Online](http://www.eveonline.com/). It is meant to be a web portal for EVE Online in-game corporations. It authorizes users with the EVE Online API, greatly reducing the time required for managing corporation members. *Important:* I no longer maintain this CMS and I will not provide support for it. I am merely posting it here hoping it may help someone.
+This is a CMS for the MMORPG [EVE Online](http://www.eveonline.com/). It is meant to be a web portal for EVE Online in-game corporations. It authorizes users with the EVE Online API, greatly reducing the time required for managing corporation members. **Important: I no longer maintain this CMS and I will not provide support for it. I am merely posting it here hoping it may help someone.**
 
 # Features
 
@@ -76,7 +76,7 @@ You can now announce your brand new corp portal to your members. Once they login
 
 # Disclaimer
 
-I am not affiliated with [EVE Online](http://www.eveonline.com/) or [CCP Games](http://www.ccpgames.com/). Also, I no longer maintain this project and will not provide support for it. If you are stuck, you are on your own.
+I am not affiliated with [EVE Online](http://www.eveonline.com/) or [CCP Games](http://www.ccpgames.com/).
 
 # License
 
