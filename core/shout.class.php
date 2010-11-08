@@ -1,0 +1,1 @@
+<?phpclass Shout{  public $ID;  public $Author;  public $AuthorName;  public $Date;  public $Text;    function __construct()   {  }}?>
