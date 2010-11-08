@@ -47,6 +47,23 @@ CREATE TABLE `gallery` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
+--
+-- Definition of table `gallery_comments`
+--
+
+DROP TABLE IF EXISTS `gallery_comments`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `gallery_comments` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `User` int(10) unsigned NOT NULL,
+  `Date` datetime NOT NULL,
+  `Comment` text NOT NULL,
+  `Image` int(10) unsigned NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
 
 --
 -- Table structure for table `operations_groups`
