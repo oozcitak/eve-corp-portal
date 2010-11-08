@@ -68,8 +68,10 @@ Now set up your http server. For Apache your configuration will look like this. 
 
 You can now restart your http server and if all goes well, you can log in to the portal. For your first login enter username `admin` and password `admin`. Once you log in, go to your profile page and change your password.
 
-You now need to configure the director API key. First create a character in game and give it director rights. Now go to the [EVE Online API page](http://www.eveonline.com/api/default.asp) and copy the API key for this character. Go to the `Portal Administration` page, select `Settings` and paste your API key here. Your corporation and member information will be fetched using this API key. It may take up to 24 hours for the changes to take effect.
-	
+You now need to configure the director API key. First create a character in game and give it director rights. Now go to the [EVE Online API page](http://www.eveonline.com/api/default.asp) and copy the API key for this character. Go to the `Portal Administration` page, select `Settings` and paste your API key here. Your corporation and member information will be fetched using this API key. It may take up to 24 hours for the changes to take effect. While here, also set your corporation name and links to killboard and alliance pages.
+
+As a last step you will probably want to change the default logo in `css/logo.jpg` to your corporation's logo.
+
 You can now announce your brand new corp portal to your members. Once they login with their API keys, they will have access to the portal with their in-game roles, character names and portraits fetched from the API.
 
 # Disclaimer
