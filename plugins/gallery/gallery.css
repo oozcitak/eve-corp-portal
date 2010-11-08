@@ -1,0 +1,56 @@
+.gal, .galhead
+{
+  background-color: #111;
+  padding: 0.5em;
+  text-align: center;
+  width: 160px;
+  border: solid 1px #444;
+  padding: 0px;  
+}
+.gal
+{
+  vertical-align: bottom;
+  border-bottom: none;
+}
+.galhead
+{
+  vertical-align: top;
+  border-top: none;
+}
+.gal img
+{
+  margin: 0.5em; 
+  border: solid 1px #444;
+}
+.gal:hover img
+{
+  outline: solid 4px #444;
+}
+.galhead a
+{
+  color: #ccc;
+  text-decoration: none;
+}
+.galhead:hover a
+{
+  color: #fff;
+  text-decoration: underline;
+}
+.progress
+{
+  background-color: #333;
+  border: solid 1px #444;
+  width: 50%;
+}
+.progress div
+{
+  background-color: #3E0E10;
+  color: #fff;
+  text-align: center;
+  overflow: visible;
+}
+.galleryimage
+{
+  max-width: 100%;
+  border: solid 2px #444;
+}
