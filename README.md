@@ -34,7 +34,7 @@ The database dump of EVE Online is not included. The [official database](http://
 
 Next, you need to configure PHP with the database settings. Open `core.class.php` in the `core` directory and change the database settings between lines 62-78.
 
-We now need to setup cron jobs for the portal. Those jobs are used to periodiacally fetch information from EVE Online API. Edit your cron jabs with:
+We now need to setup cron jobs for the portal. Those jobs are used to periodiacally fetch information from EVE Online API. Edit your cron jobs with:
 
     crontab -e
 
@@ -66,9 +66,9 @@ Now set up your http server. For Apache your configuration will look like this. 
       </Directory>
     </VirtualHost>
 
-You can now restart your http server and if all goes well, you can log in to the portal. For your first login enter username `admin` and `password `admin`. Once you log in, go to your profile page and change your password.
+You can now restart your http server and if all goes well, you can log in to the portal. For your first login enter username `admin` and password `admin`. Once you log in, go to your profile page and change your password.
 
-You now need to configure the director API key. First create a character in game and give it director right. Now go to the [EVE Online API page](http://www.eveonline.com/api/default.asp) and copy the API key for this character. Go to the admin page, select the portal admin option and paste your API key here. Your corporation and member information will be fetched using this API key. It may take up to 24 hours for the changes to take effect.
+You now need to configure the director API key. First create a character in game and give it director rights. Now go to the [EVE Online API page](http://www.eveonline.com/api/default.asp) and copy the API key for this character. Go to the admin page, select the portal admin option and paste your API key here. Your corporation and member information will be fetched using this API key. It may take up to 24 hours for the changes to take effect.
 	
 You can now announce your brand new corp portal to your members. Once they login with their API keys, they will have access to the portal with their in-game roles, character names and portraits fetched from the API.
 
