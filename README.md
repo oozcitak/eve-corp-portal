@@ -21,17 +21,17 @@ You will need a http server, a MySQL server and PHP installed. A basic LAMP stac
 First off clone the repository. Your home directory would be a good place.
 
     cd ~
-	git clone git://github.com/oozcitak/eve-corp-portal.git
+    git clone git://github.com/oozcitak/eve-corp-portal.git
 
 Let us now import the database schema. First create three databases. One named `portal_core`, another named `portal_plugins` and the last one named `portal_eve`. Now import the database dumps in the `sql` directory:
 
-        cd eve-corp-portal
-	mysql portal_core < sql/core.sql
-	mysql portal_plugins < sql/plugins.sql
+    cd eve-corp-portal
+    mysql portal_core < sql/core.sql
+    mysql portal_plugins < sql/plugins.sql
 
 The database dump of EVE Online is not included. The [official database](http://www.eveonline.com/community/toolkit.asp) is in MSSQL format. You need to either convert it yourself or search a bit for a community MySQL dump. Once you get the MySQL dump, import that too:
 
-	mysql portal_eve < sql/eve.sql
+    mysql portal_eve < sql/eve.sql
 
 Next, you need to configure PHP with the database settings. Open `core.class.php` in the `core` directory and change the database settings between lines 62-78.
 
