@@ -25,6 +25,7 @@ First off clone the repository. Your home directory would be a good place.
 
 Let us now import the database schema. First create three databases. One named `portal_core`, another named `portal_plugins` and the last one named `portal_eve`. Now import the database dumps in the `sql` directory:
 
+        cd eve-corp-portal
 	mysql portal_core < sql/core.sql
 	mysql portal_plugins < sql/plugins.sql
 
