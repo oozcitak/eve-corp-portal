@@ -22,10 +22,15 @@ First off clone the repository. Your home directory would be a good place.
 
     cd ~
     git clone git://github.com/oozcitak/eve-corp-portal.git
-
-Let us now import the database schema. First create three databases. One named `portal_core`, another named `portal_plugins` and the last one named `portal_eve`. Now import the database dumps in the `sql` directory:
-
     cd eve-corp-portal
+
+Let us now import the database schema. First create three databases. One named `portal_core`, another named `portal_plugins` and the last one named `portal_eve`. Alternatively, you can use the script included in the `sql` directory.
+
+    chmod +x sql/makedb.sh
+    sql/makedb.sh
+
+Now import the database dumps in the `sql` directory:
+
     mysql portal_core < sql/core.sql
     mysql portal_plugins < sql/plugins.sql
 
