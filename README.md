@@ -71,7 +71,7 @@ Add the following lines. Remember to change the paths.
 
 Now set up your http server. For Apache your configuration will look like this. (Obviously, you need to replace server name and root path to your settings.)
 
-``` xml
+``` apacheconf
 <VirtualHost *:80>
   ServerName  example.com
   DirectoryIndex index.php
